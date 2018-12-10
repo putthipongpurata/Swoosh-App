@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeagueActivity">
+    tools:context=".Controller.LeagueActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -61,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/mensLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
@@ -69,11 +69,12 @@
             android:textColor="@android:color/white"
             android:textOff="@string/mens"
             android:textOn="@string/mens"
+            android:onClick="onMensClicked"
             tools:layout_editor_absoluteX="161dp"
             tools:layout_editor_absoluteY="144dp" />
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/womensLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -82,17 +83,19 @@
             android:text="@string/womens"
             android:textColor="@android:color/white"
             android:textOff="@string/womens"
-            android:textOn="@string/womens" />
+            android:textOn="@string/womens"
+            android:onClick="onWomensClicked" />
 
         <ToggleButton
-            android:id="@+id/toggleButton3"
+            android:id="@+id/co_edLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
             android:text="@string/co_ed"
             android:textColor="@android:color/white"
             android:textOff="@string/co_ed"
-            android:textOn="@string/co_ed" />
+            android:textOn="@string/co_ed"
+            android:onClick="onCo_EdClicked" />
     </LinearLayout>
 
     <Button
